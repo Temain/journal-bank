@@ -1,0 +1,183 @@
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-30 21:55:00 +0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by EquipmentController#index as HTML
+  [1m[35mUser Load (19.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDepartment Load (154.5ms)[0m  [1mSELECT "departments".* FROM "departments"   ORDER BY name ASC[0m
+  [1m[35mEquipmentType Load (0.4ms)[0m  SELECT "equipment_types".* FROM "equipment_types"
+  [1m[36mCategory Load (31.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (12.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "equipment"  WHERE "equipment"."writed_off" = 'f' LIMIT 80 OFFSET 0) subquery_for_count
+  [1m[36mEquipment Load (5.8ms)[0m  [1mSELECT  "equipment".* FROM "equipment"  WHERE "equipment"."writed_off" = 'f'  ORDER BY updated_at DESC LIMIT 80 OFFSET 0[0m
+  [1m[35mManufacturer Load (20.8ms)[0m  SELECT "manufacturers".* FROM "manufacturers"  WHERE "manufacturers"."id" IN (2244, 1859, 2259, 2412, 2313, 2283, 2248, 2407, 2345, 2229, 2398, 2372, 2397, 2263, 2238, 1857, 2337, 2388, 2228, 2380, 2379, 2309, 2373)  ORDER BY name ASC
+  [1m[36mEquipmentType Load (0.2ms)[0m  [1mSELECT "equipment_types".* FROM "equipment_types"  WHERE "equipment_types"."id" IN (4, 5, 1, 9, 2, 3, 6)[0m
+  [1m[35mDepartment Load (0.5ms)[0m  SELECT "departments".* FROM "departments"  WHERE "departments"."id" IN (1843, 1668, 1746, 1708, 1841, 1799, 1855, 1845, 1714, 1834, 1835, 1715, 1674, 1723, 1694, 1859, 1839, 1831, 1818, 1808, 1698, 1820, 1858, 1825, 1842, 1752, 1724, 1807, 1803, 1675, 1824, 1785, 1706, 1757, 1712, 1783, 1775, 1683, 1688, 1860, 1711)  ORDER BY name ASC
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered equipment/_item.html.haml (302.6ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "equipment"  WHERE "equipment"."writed_off" = 'f'
+  Rendered equipment/_container.html.haml (1571.1ms)
+  Rendered equipment/_relocation.html.haml (33.7ms)
+  Rendered equipment/_repair.html.haml (19.2ms)
+  Rendered equipment/_report_by_department.html.haml (12.3ms)
+  Rendered equipment/_report_by_spare.html.haml (4.7ms)
+  Rendered equipment/index.html.haml within layouts/application (1774.4ms)
+Completed 200 OK in 4105ms (Views: 3492.0ms | ActiveRecord: 249.0ms)
+
+
+Started GET "/assets/bootstrap-datetimepicker.css?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/normalize-rails.css?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/select2-bootstrap.css?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/typeaheadjs.css?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/nprogress-bootstrap.css?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/nprogress.css?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/history.css?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/equipment.css?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/import.css?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/persons.css?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/reports.css?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/jquery.remotipart.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/moment/ru.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/locales/bootstrap-datetimepicker.ru.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/select2_locale_ru.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/timeliner.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/nprogress.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/typeahead.jquery.min.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/jquery.mixitup.min.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/bloodhound.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/nprogress-turbolinks.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/bloodhound.min.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/equipment.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/history.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/import.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/persons.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/typeahead.bundle.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/typeahead.bundle.min.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/typeahead.jquery.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-30 21:55:05 +0400
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2014-09-30 21:55:06 +0400
+
+
+Started GET "/assets/fonts/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-09-30 21:55:06 +0400
