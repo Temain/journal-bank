@@ -30,11 +30,11 @@ textarea.form-control:focus {
 }
 
 body {
-  background-color: #4e5d6c;
+  background-color: #ffffff;
 
   .menu-base {
     position: fixed;
-    background-color: #2b3e50;
+    // background-color: #2b3e50;
     padding: 5px;
     z-index: 99;
 
@@ -42,7 +42,7 @@ body {
       display: inline-block;
       padding: 5px;
       & > a > i:hover {
-        color: #ffffff;
+        color: #000000;
       }
 
       .dropdown-menu {
@@ -67,7 +67,11 @@ body {
         }
 
         &.dark {
-          background-color: #2b3e50;
+          background-color: #ffffff;
+
+          &.normal {
+            font-size: 1em;
+          }
 
           & span {
             font-size: 0.5em;
@@ -88,14 +92,14 @@ body {
       .dropdown-menu a:hover i,
       .dropdown-menu a:hover span,
       .dropdown-menu a:hover {
-        color: #ffffff;
+        color: #000000;
         text-decoration: none;
       }
 
       .dropdown-menu > li > a:hover {
         background-image: none;
-        background-color: #2b3e50;
-        color: white;
+        background-color: #ffffff;
+        color: #000000;
       }
     }
   }
@@ -103,16 +107,17 @@ body {
   .menu {
     @extend .menu-base;
     right: 0px;
-    top: 0px;
+    top: 3px;
+    border-radius: 3px;
   }
 
   .back {
     @extend .menu-base;
     left: 0px;
-    top: 0px;
+    top: 3px;
 
     .text-muted {
-      color: #4e5d6c;
+      //color: #4e5d6c;
     }
   }
 
@@ -131,7 +136,7 @@ body {
     }
 
     i:hover {
-      color: #ffffff;
+      color: #000000;
     }
   }
 
@@ -188,7 +193,7 @@ body {
       display: table-cell;
       vertical-align: middle;
       float: none;
-      background-color: #2b3e50;
+      // background-color: #2b3e50;
     }
 
     .input-group {
@@ -302,7 +307,7 @@ body {
 .select2-container-multi .select2-choices .select2-search-choice {
   background-color: #ffffff;
   background-image: none;
-  border-radius: 0px;
+  border-radius: 3px;
 }
 
 /* ------ bootstrap datepicker -------- */
@@ -312,7 +317,7 @@ body {
 .bootstrap-datetimepicker-widget td.second:hover,
 .bootstrap-datetimepicker-widget thead tr:first-child th:hover,
 .bootstrap-datetimepicker-widget td span:hover {
-  background: #2b3e50;
+  // background: #2b3e50;
 }
 
 /* ------- form validation ---------- */
@@ -322,10 +327,10 @@ body {
 }
 
 select {
-  border: 0 !important;  /*Removes border*/
+  border: 1px solid #cccccc !important;  /*Removes border*/
   -webkit-appearance: none;  /*Removes default chrome and safari style*/
   -moz-appearance: none; /* Removes Default Firefox style*/
-  background: #ffffff url(down.png) no-repeat 96% center !important;
+  background: #ffffff url(down.png) no-repeat 98% center !important;
   width: 100px; /*Width of select dropdown to give space for arrow image*/
   text-indent: 0.01px; /* Removes default arrow from firefox*/
   text-overflow: "";  /*Removes default arrow from firefox*/ /*My custom style for fonts*/

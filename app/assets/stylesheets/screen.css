@@ -74,7 +74,7 @@ p {
 
 .timelineContainer {
     overflow: hidden;
-	border-left:2px solid #ccc;
+	border-left:2px solid #000;
 	/*margin:20px auto;
 	width:900px;*/
     padding-top: 25px;
@@ -125,11 +125,11 @@ div.timelineMajor {
 	}
 
 	.timelineMajor h2 span {
-		background:#ccc;
+		background:#000;
 		-webkit-border-radius:4px;
 		-moz-border-radius:4px;
 		border-radius:4px;
-        color:#2b3e50;
+        color:#fff;
 		letter-spacing:.1em;
 		line-height:1.7em;
 		padding:3px 5px 1px;
@@ -157,24 +157,24 @@ dl.timelineMinor {
 	}
 
 		.timelineMinor dt a {
-			color:#999;
+			color:#000;
 			cursor:pointer;
 		}
 
 		.timelineMinor dt a.closed {
-			color:#999;
+			color:#000;
 			font-size:0.8em;
 			margin-left:0;
 		}
 
 		.timelineMinor dt a.open {
 			/*color:#7DBADF;*/
-            color: #ffffff;
+            color: #cccccc;
 		}
 
 		.timelineMinor dt a:hover {
 			/*color:#7DBADF;*/
-            color: #ffffff;
+            color: #000000;
             text-decoration: none;
 		}
 
@@ -218,7 +218,7 @@ dl.timelineMinor {
 }
 
 .timelineEvent blockquote {
-	border-left:2px solid #ccc;
+	border-left:2px solid #000;
 	clear:left;
 	float:left;
 	font-size:1.8em;

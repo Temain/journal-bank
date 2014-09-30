@@ -46,7 +46,7 @@ $nprogress-color: #FF5C02;
 //}
 
 .import {
-  #background-color: #2b3e50;
+ // background-color: #2b3e50;
  /* max-height: 100%;
   max-width: 100%;
   margin-bottom: -20px;
@@ -98,7 +98,7 @@ $nprogress-color: #FF5C02;
 
         &:hover a > div,
         &:hover a > i {
-          color: white;
+          color: #000;
           text-decoration: none !important;
         }
       }

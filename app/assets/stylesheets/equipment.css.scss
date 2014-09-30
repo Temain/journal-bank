@@ -3,9 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .header {
-  background-color: #2b3e50;
+  // background-color: #2b3e50;
   margin: 0px 0px 20px;
-  /*border-bottom: 1px solid #FF6803;*/
+  border-bottom: 1px dashed #cccccc;
 
   .title{
     font-weight: 400;
@@ -48,7 +48,7 @@
 
     .link {
       outline: none;
-      background-color: #2b3e50;
+      background-color: #FFFFFF;
       border: none;
     }
   }
@@ -62,10 +62,12 @@
   }
 
   .item {
-    background-color: #2b3e50;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    //background-color: #2b3e50;
     padding: 15px;
     margin-bottom: 5px;
-    border-bottom: 2px solid #4e5d6c;
+    //border-bottom: 2px solid #4e5d6c;
     width: 100%;
 
     i {
@@ -107,7 +109,7 @@
         }
 
         i:hover {
-          color: #ffffff;
+          color: #000000;
         }
       }
 
@@ -134,7 +136,7 @@
         .btn-group {
           vertical-align: text-top;
           button.dropdown-toggle {
-            background-color: #2b3e50;
+            background-color: #ffffff;
             font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
             border: none;
             border-bottom: 1px solid #2b3e50;
@@ -162,7 +164,7 @@
 
 /* ----------- edit and new form ------------ */
 .form-horizontal {
-  background-color: #2b3e50;
+  // background-color: #2b3e50;
   padding: 20px 30px 20px;
 
   legend {
@@ -188,23 +190,23 @@
 
 
 .edit {
-  background-color: #2b3e50;
+  background-color: #ffffff;
   .menu {
-    background-color: #4e5d6c;
+    background-color: #ffffff;
     .text-muted {
-      color: #2b3e50;
+      // color: #2b3e50;
     }
   }
 
   .back {
-    background-color: #4e5d6c;
+    background-color: #ffffff;
     .text-muted {
-      color: #2b3e50;
+      // color: #2b3e50;
     }
   }
 
   .header {
-    background-color: #4e5d6c;
+    background-color: #ffffff;
     border-bottom: 1px solid #FF6803;
 
     .title {

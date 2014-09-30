@@ -13,7 +13,7 @@
             = link_to "javascript:;", method: :get, class: "dropdown-toggle", data: { toggle: "dropdown" }, id: "actions-link", "data-content" => "Действия",
               "rel" => "popover", "data-placement" => "bottom", "data-trigger" => "hover" do
               = fa_icon "bars 2x", class: "text-muted"
-            %ul.dropdown-menu.light
+            %ul.dropdown-menu.dark
               %div
                 = link_to new_equipment_path, method: :get do
                   = fa_icon "plus-square", class: "text-muted"
@@ -26,7 +26,7 @@
             = link_to "javascript:;", id: "reports-link", class: "dropdown-toggle", data: { toggle: "dropdown" }, "data-content" => "Отчеты",
               "rel" => "popover", "data-placement" => "bottom", "data-trigger" => "hover" do
               = fa_icon "bar-chart-o 2x", class: "text-muted"
-            %ul.dropdown-menu.light
+            %ul.dropdown-menu.dark.normal
               %li= link_to "По подраделению", "javascript:;", class: "text-muted", "data-toggle" => "modal", "data-target" => "#report_by_department_modal"
               %li= link_to "По зап. части", "javascript:;", class: "text-muted", "data-toggle" => "modal", "data-target" => "#report_by_spare_modal"
 
@@ -53,6 +53,7 @@
               "rel" => "popover", "data-placement" => "bottom", "data-trigger" => "hover" do
               = fa_icon "arrow-circle-o-left 2x", class: "text-muted"
     .row.header
+      = image_tag("logo2.jpg", class: "logo")
       .col-md-6.col-md-offset-3
         %h1.title= @item.full_name
     .row.content

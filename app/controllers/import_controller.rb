@@ -4,7 +4,7 @@ class ImportController < ApplicationController
   before_action :load_equipment_types, only: [:index]
 
   def index
-    @dark_page = true
+    # @dark_page = false
   end
 
   def upload
