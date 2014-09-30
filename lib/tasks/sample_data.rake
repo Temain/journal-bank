@@ -4,15 +4,15 @@ namespace :db do
   task create_user: :environment do
 
     # Create users
-    User.create!(username:              "krepyshev.d",
-                 email:                 "krepyshev.d@kubsau.ru",
-                 password:              "Hs3ZE%fY",
-                 password_confirmation: "Hs3ZE%fY")
+    User.create!(username:              "cherepovskiy",
+                 email:                 "cherepovskiy@evgeny.by",
+                 password:              "12345678",
+                 password_confirmation: "12345678")
 
-    User.create!(username:              "kramer.a",
-                 email:                 "kramer.a@kubsau.ru",
-                 password:              "zNT69ix?",
-                 password_confirmation: "zNT69ix?")
+    User.create!(username:              "temain",
+                 email:                 "temain@mail.ru",
+                 password:              "12345678",
+                 password_confirmation: "12345678")
   end
 
 
